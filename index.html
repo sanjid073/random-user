@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user</title>
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- font awosome -->
+    <script src="https://kit.fontawesome.com/0ffd30f08f.js" crossorigin="anonymous"></script>
+
+    <style>
+        li:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class=" text-4xl text-center mt-10  text-purple-700">Random Users</h1>
+        <section class="bg-green-400 md:w-3/4 mx-auto mt-5 p-10">
+           
+                <div class="text-center">
+                    <img id="user-pic" width="200px" class="rounded-full mx-auto" src="sanjidmahi.jpg" alt="">
+                </div>
+                <div class="text-center">
+                    <span id="span-info" class="block text-xl">Hi ! My Name is</span>
+                    <h1 id="user-name" class="text-3xl font-semibold">Sanjid Haq</h1>
+                </div>
+
+                <div>
+                    <ul class="flex md:w-1/2 mx-auto justify-between mt-8">
+                        <li>
+                            <i id="user-icon" class="text-gray-600 hover:text-purple-700 fas fa-user md:text-4xl text-xl px-3"></i>
+                        </li>
+                        <li>
+                            <i id="email-icon"
+                                class="text-gray-600 hover:text-purple-700 fas fa-envelope md:text-4xl text-xl px-3"></i>
+                        </li>
+                        <li>
+                            <i id="calendar-icon"
+                                class="text-gray-600 hover:text-purple-700 fas fa-calendar-alt md:text-4xl text-xl px-3"></i>
+                        </li>
+                        <li>
+                            <i id="address-icon"
+                                class="text-gray-600 hover:text-purple-700 far fa-address-card md:text-4xl text-xl px-3"></i>
+                        </li>
+                        <li>
+                            <i id="phone-icon"
+                                class="text-gray-600 hover:text-purple-700 fas fa-phone-alt md:text-4xl text-xl px-3"></i>
+                        </li>
+                        <li>
+                            <i id="password-icon"
+                                class="text-gray-600 hover:text-purple-700 fas fa-lock md:text-4xl text-xl px-3"></i>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+        <div class="mx-auto my-4 "><button class="text-2xl text-white mx-auto block bg-purple-700 px-4 py-2 rounded" onclick="loadApi()">Next</button></div>
+    </header>
+    
+    <script src="randomuser.js"></script>
+</body>
+</html>
